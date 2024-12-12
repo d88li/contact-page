@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4 em;
+    padding: 0 16px;
     /*background: #F6F5E0;*/
   }
     .nav .items-right a {
@@ -158,19 +158,24 @@
       column-gap: 8px;
       column-width: 100px;
       font-family: "Fira Mono";
-      font-size: 18px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
     }
-    
+    .links {
+      gap: 0;
+      display: flex;
+      flex-direction: column; 
+    }
     .links a {
       color: #F6F5E0;
-      padding: 16px;
-      font-size: 12px;
+      font-size: 9px;
       display: flex;
-      flex-direction: column; /* Stack links */
       justify-content: flex-end; /* Push links to the bottom */
+      line-height: 1.1;
+      margin: 0;
+      padding: 0;
     }
     
     
