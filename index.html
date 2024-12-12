@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 4 em;
-    background: #F6F5E0;
+    /*background: #F6F5E0;*/
   }
   
   a {
@@ -77,6 +77,11 @@
     
   h2 {
     color: #F6F5E0;
+    font-family: VT323, monospace;
+    font-size: 100px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
     
     .content {
@@ -118,7 +123,11 @@
     
     .right-side {
       background-color: #D00003; 
-      /*width: 50%;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100vh;
+      padding: 16px;
     }
     
     img {
@@ -127,13 +136,26 @@
       display: block; /* Remove inline spacing for images */
       /*object-fit: cover; /* Optionally, crop the image to fill the area */
     }
+    .top {
+      column-count: 2;
+      padding-bottom: 8px;
+    }
     
     .description {
       color: #F6F5E0;
+      column-count: 2;
+      column-gap: 8px;
+      column-width: 100px;
+      font-family: "Fira Mono";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
     
     .links a {
       color: #F6F5E0;
+      padding: 16px;
     }
     
     
@@ -165,12 +187,14 @@
       </div>
 
       <div class="right-side">
-        <h2>
-          I'm Derica,
-        </h2>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/derica-li-523509310" target="_blank">linkedin</a>
-          <a href="mailto:d88li@uwaterloo.ca">d88li@uwaterloo.ca</a>
+        <div class="top">
+          <h2>
+            I'm Derica,
+          </h2>
+          <div class="links">
+              <a href="https://www.linkedin.com/in/derica-li-523509310" target="_blank">linkedin</a>
+              <a href="mailto:d88li@uwaterloo.ca">d88li@uwaterloo.ca</a>
+          </div>
         </div>
         <div class="description">
           <div class="column1">
@@ -180,6 +204,10 @@
             I’ve enjoyed creative collaboration as a user experience intern at Nuyugen, University of Waterloo filmmaking club executive, CUBE designer, and GBDA program ambassador. Let’s synergize and see where our unique perspectives take us!
           </div>
         </div>
+        
+       
+        
+        
       </div>
     </div>
   </body>
