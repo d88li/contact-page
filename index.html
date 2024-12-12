@@ -26,6 +26,8 @@
   }
   
   .nav {
+    z-index: 10;
+    position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,6 +35,9 @@
     padding: 0 4 em;
     /*background: #F6F5E0;*/
   }
+    .nav .items-right a {
+      color: #F6F5E0;
+    }
   
   a {
     text-decoration: none;
@@ -69,6 +74,7 @@
     text-align: center;
     margin: 0 auto; /* Center horizontally */
     margin-top: 0;
+    color: #F6F5E0;
   }
   
   h1:hover {
@@ -119,6 +125,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      padding: 16px;
     }
     
     .right-side {
@@ -137,7 +144,9 @@
       /*object-fit: cover; /* Optionally, crop the image to fill the area */
     }
     .top {
-      column-count: 2;
+      display: flex; /* Flexbox for horizontal alignment */
+      justify-content: space-between; /* Space between h2 and links */
+      align-items: flex-end; /* Align items to the bottom of the container */
       padding-bottom: 8px;
     }
     
@@ -156,6 +165,10 @@
     .links a {
       color: #F6F5E0;
       padding: 16px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column; /* Stack links */
+      justify-content: flex-end; /* Push links to the bottom */
     }
     
     
