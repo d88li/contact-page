@@ -18,7 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fira+Mono:wght@400;500;700&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=VT323&display=swap" rel="stylesheet">
   </head>
   <style>
-  
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    
   * {
     margin: 0;
     padding: 0;
@@ -33,6 +38,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
+    top: 0;
+    margin: 0;
+    line-height: 1;
     /*background: #F6F5E0;*/
   }
     .nav .items-right a {
@@ -60,7 +68,7 @@
     background-color: #F6F5E0;
     color: #D00003;
   }
-  h1 {
+  .logo {
     /*
     font-family: VT323;
     font-size: 250px;
@@ -77,9 +85,10 @@
     margin: 0 auto; /* Center horizontally */
     margin-top: 0;
     color: #D00003;
+    line-height: 1;
   }
   
-  h1:hover {
+  .logo:hover {
     color: #E77F81;
   }
     
@@ -192,9 +201,9 @@
 -->
       <div class="item-left">
         <a href="https://d88li.github.io/Assignment-3/" target="_self">
-        <h1>
+        <div class="logo">
           <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">D</span>erica <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">L</span>i
-        </h1>
+        </div>
         </a>
       </div>
       <div class="items-right">
