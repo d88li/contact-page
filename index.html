@@ -23,13 +23,13 @@
       padding: 0;
       height: 100%;
     }
-    
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   .nav {
     z-index: 10;
     position: fixed;
@@ -49,7 +49,7 @@
     .nav .items-left a {
       color: #D00003;
     }
-    
+
   a {
     text-decoration: none;
     font-family: "Fira Mono";
@@ -60,7 +60,7 @@
     color: #D00003;
     padding: 0 8px;
   }
-  
+
   .nav a:hover {
     color: #E77F81;
   }
@@ -87,11 +87,11 @@
     color: #D00003;
     line-height: 0;
   }
-  
+
   .logo:hover {
     color: #E77F81;
   }
-    
+
   h2 {
     color: #F6F5E0;
     font-family: VT323, monospace;
@@ -100,7 +100,7 @@
     font-weight: 400;
     line-height: 0.75;
   }
-    
+
     .content {
       /*
       display: flex;
@@ -122,19 +122,21 @@
       width: 25%;
       height: 100%;
     }
-    
+
     .right-side {
       width: 75%;
       height: 100%
     }
     /*
     .left-side, .right-side {
+       flex: 1; /* Makes both sides take up equal width */
+      height: 100%; /* Ensure both sides are the full height */
        flex: 1; 
       height: 100%; 
       width: 50%;
     }
     */
-    
+
     .left-side .hello {
       position: absolute;
       top: 35%;
@@ -148,7 +150,7 @@
       line-height: normal;
       padding: 16px;
     }
-    
+
     .right-side {
       background-color: #D00003; 
       display: flex;
@@ -157,7 +159,7 @@
       height: 100vh;
       padding: 16px;
     }
-    
+
     img {
       height: 100vh; /* Full height of the viewport */
       width: auto;   /* Maintain the aspect ratio */
@@ -170,7 +172,7 @@
       align-items: flex-end; /* Align items to the bottom of the container */
       padding-bottom: 8px;
     }
-    
+
     .description {
       color: #F6F5E0;
       column-count: 2;
@@ -196,10 +198,10 @@
       margin: 0;
       padding: 0;
     }
-    
-    
+
+
   </style>
-  
+
   <body>
     <div class="nav">
       <!--
@@ -223,10 +225,10 @@
         <a href="https://d88li.github.io/contact-page/" target="_self">Info</a>
       </div>
     </div>
-    
+
     <div class="content">
       <div class="left-side">
-        <img src="Derica.JPG" alt="image of derica">
+        <img src="Derica-more-cropped.JPG" alt="image of derica">
         <!--
         <div class="hello">
           <span style="font-family:ballet;font-size:250px;font-weight:400;line-height:normal">H</span>ello!
@@ -246,17 +248,17 @@
         </div>
         <div class="description">
           <div class="column1">
-            I'm a student studying Global Business and Digital Arts with a minor in computing. My studies involve graphic design, UX/UI design, photography, filmmaking, and programming. I’m always exploring new mediums with the aim of fostering community via design. 
+            a student studying Global Business and Digital Arts with a minor in computing. My studies involve graphic design, UX/UI design, photography, filmmaking, and programming. I’m always exploring new mediums with the aim of fostering community via design. 
+            I'm a student studying Global Business and Digital Arts with a minor in computing. My studies involve graphic design, UX/UI design, photography, filmmaking, and programming. I’m always exploring new mediums with the aim of fostering community via design. 
           </div>
           <div class="column2">
             I’ve enjoyed creative collaboration as a user experience intern at Nuyugen, University of Waterloo filmmaking club executive, CUBE designer, and GBDA program ambassador. Let’s synergize and see where our unique perspectives take us!
           </div>
         </div>
-        
-       
-        
-        
+
+
+
+
       </div>
     </div>
   </body>
-</html>
